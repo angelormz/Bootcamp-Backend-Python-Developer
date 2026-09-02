@@ -1,0 +1,22 @@
+"""
+Es el estándar moderno unificado de Python (definido en los PEP 518 y PEP621)
+Su propósito es centralizar en un solo lugar:
+1. Metadatos del proyecto: Nombre, versión, descripción y versión mínima
+de Python soportada.
+2. Dependencias: Qué librerías externas necesita tu código para funcionar
+(en este caso clientes HTTP como requests y lectura de variables con
+python-dotenv).
+3. Instalación en modo editable
+"""
+
+[project]
+name = "rest-client-project"
+version = 1.0.0
+description = "REST client project"
+requieres-python = ">=3.10"
+dependencies = ["requests", "python-dotenv",]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
