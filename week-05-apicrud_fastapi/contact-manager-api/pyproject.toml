@@ -1,0 +1,20 @@
+[project]
+name = "contact-manager-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Angelo Ramirez Zuñiga", email = "angelo18.ramirez@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[project.scripts]
+contact-manager-api = "contact_manager_api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
